@@ -18,7 +18,7 @@ alert(x);*/
 
 // 3 задание
 
-let f = 3;
+/* let f = 3;
 let g = 9;
 
 if (f >= 0 && g >= 0) {
@@ -27,6 +27,7 @@ if (f >= 0 && g >= 0) {
     alert(f * g);
 } else if ((f < 0 && g >= 0) || (f >= 0 && g < 0 )) {
     alert(f + g);
-}
+} */
 
+let f = 8;
 
