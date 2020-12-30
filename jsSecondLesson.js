@@ -27,7 +27,93 @@ if (f >= 0 && g >= 0) {
     alert(f * g);
 } else if ((f < 0 && g >= 0) || (f >= 0 && g < 0 )) {
     alert(f + g);
-} */
+}
 
-let f = 8;
+// 4 Задание
 
+let f = 10;
+alert(f);
+++f;
+
+switch (f) {
+    case f:
+        alert(f);
+        ++f;
+    case f:
+        alert(f);
+        ++f
+    case f:
+        alert(f);
+        ++f;
+    case f:
+        alert(f);
+        ++f
+    case f:
+        alert(f);
+        ++f;
+}
+
+// 5 и 6 Задание
+
+function sumNumber (a, b) {
+    return a += b;
+}
+
+function differNumber (a, b) {
+    return a -= b;
+}
+
+function productNumber (a, b) {
+    return a += b;
+}
+
+function divideNumber (a, b) {
+    return a /= b;
+}
+
+function mathOperation(a, b, operation) {
+    switch (operation) {
+        case 'сумма':
+            return sumNumber(a, b);
+
+        case 'разница':
+            return differNumber(a, b);
+
+        case 'произведение':
+            return productNumber(a, b);
+
+        case 'частное':
+            return divideNumber(a, b);
+
+        default :
+            alert("неизвестное действие")
+            break;
+    }
+}
+let a = prompt("введите первое число");
+let b = prompt('введите второе число');
+
+let operation = prompt("выберите одно из четырех действий(сумма, разница, произведение, частное)");
+
+let c = mathOperation(1,2,  operation);
+
+alert (c);
+
+// 7 задание
+
+null == 0; //взвращает false так как согласно специфиации задано как стандартное значение при ситуциях отличных от тех, которые указаны в спецификации.
+null >= 0; //возвращает true, так как сравнения использует метод от противного, т.е. так как null < 0 принимает значение false, следовательно null >= 0 примет значение true.
+
+ */
+
+// 8 задание
+
+function power(val, pow) {
+    if (pow == 1) {
+        return val;
+    } else {
+        return val * power(val, pow - 1);
+    }
+}
+
+alert (power(5, 10));
