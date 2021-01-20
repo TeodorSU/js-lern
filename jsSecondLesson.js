@@ -116,4 +116,6 @@ function power(val, pow) {
     }
 }
 
-alert (power(5, 10));
+alert (power(5, 10))
+
+
